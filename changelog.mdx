@@ -1,0 +1,132 @@
+---
+title: Changelog
+description: Track the latest updates and improvements to Alexander Krakhotko's documentation platform.
+---
+
+## Recent Updates
+
+Stay informed about the latest releases. You can find detailed release notes, migration guides, and resolved issues below. Alexander Krakhotko follows semantic versioning to ensure smooth upgrades.
+
+<Update label="2024-10-15" description="v1.2.0" tags={["feature", "improvement"]}>
+
+## New Features
+
+- Added real-time collaboration for teams, allowing multiple users to edit documentation simultaneously.
+- Introduced customizable themes with support for your brand color `#3B82F6`.
+- New search indexing for faster navigation across large documentation spaces.
+
+## Improvements
+
+- Enhanced performance of page rendering by `>30%` for complex MDX pages.
+- Better mobile responsiveness with improved touch interactions.
+
+## Bug Fixes
+
+- Fixed parsing errors in nested code blocks within JSX components.
+- Resolved issues with Mermaid diagram rendering in dark mode.
+
+</Update>
+
+<Update label="2024-09-20" description="v1.1.0" tags={["bugfix", "improvement"]}>
+
+## Improvements
+
+- Optimized API response times for documentation export endpoints.
+- Added syntax highlighting for 20+ new languages in code blocks.
+
+## Bug Fixes
+
+- Corrected frontmatter parsing when using special characters like `{` or `<`.
+- Fixed collapsible `<Expandable>` components not respecting `default-open` attribute.
+
+</Update>
+
+<Update label="2024-08-10" description="v1.0.0" tags={["feature", "breaking"]}>
+
+## New Features
+
+- Core MDX documentation engine with support for 15+ components like `<Callout>`, `<Steps>`, and `<Tabs>`.
+- Integrated version control with GitHub sync.
+- Customizable navigation and sidebar generation.
+
+## Breaking Changes
+
+- Updated attribute syntax to require double quotes for all strings, e.g., `title="Text"`.
+
+To migrate, review your JSX components and ensure compliance.
+
+</Update>
+
+## Upcoming Roadmap
+
+Discover what's next for Alexander Krakhotko. These features prioritize user feedback and platform scalability.
+
+<Columns cols={3}>
+
+<Card title="AI-Powered Editing" icon="zap" href="#">
+
+  Coming in v1.3.0: Auto-generate documentation from code comments using AI.
+
+</Card>
+
+<Card title="Advanced Analytics" icon="bar-chart-3" href="#">
+
+  Track page views, search queries, and user engagement in v1.4.0.
+
+</Card>
+
+<Card title="Multi-Language Support" icon="globe" href="#">
+
+  Full i18n for documentation spaces in early 2025.
+
+</Card>
+
+</Columns>
+
+## Version Compatibility
+
+Check compatibility before upgrading. Alexander Krakhotko supports the latest two versions for full feature access.
+
+| Version | Node.js | React | MDX | Status      |
+|---------|---------|-------|-----|-------------|
+| v1.2.0  | `>=18` | `^18` | `^3` | Current    |
+| v1.1.0  | `>=16` | `^17` | `^2` | Supported  |
+| v1.0.0  | `>=14` | `^16` | `^2` | Legacy     |
+
+<Callout kind="tip">
+
+  Upgrade to v1.2.0 for the best experience. Use `npm install alexander-krakhotko@latest` to get started.
+
+</Callout>
+
+## How to Stay Updated
+
+Follow these steps to never miss a release.
+
+<Steps>
+
+<Step title="Subscribe to RSS" icon="rss">
+
+  Add our changelog feed to your reader: `https://docs.alexanderkrakhotko.com/changelog.xml`.
+
+</Step>
+
+<Step title="Enable Notifications" icon="bell">
+
+  In your dashboard, go to Settings > Notifications and select "Releases".
+
+</Step>
+
+<Step title="Check GitHub" icon="github">
+
+```bash
+git clone https://github.com/alexander-krakhotko/docs-platform.git
+cd docs-platform
+git log --oneline -10
+```
+
+  Review recent commits for previews.
+
+</Step>
+
+</Steps>

@@ -1,0 +1,129 @@
+---
+title: Getting Started
+description: Set up your Alexander Krakhotko documentation space and create your first project in just a few minutes.
+---
+
+## Prerequisites
+
+Before you begin, ensure you have:
+
+- A modern web browser like Chrome or Firefox
+- An email address for account verification
+- Optional: Node.js `{>=18}` if using the CLI for uploads
+
+<Callout kind="info">
+
+Alexander Krakhotko is a web-based tool, so no downloads are required for basic setup. The CLI enhances file management for larger projects.
+
+</Callout>
+
+## Create Your Account and Log In
+
+Follow these steps to get started quickly.
+
+<Steps>
+  <Step title="Sign Up" icon="user-plus">
+
+  Visit `https://app.alexanderkrakhotko.com/signup` and enter your email, name, and a strong password.
+
+  Click **Create Account**.
+
+  </Step>
+  <Step title="Verify Your Email" icon="mail">
+
+  Check your inbox for a verification email from Alexander Krakhotko.
+
+  Click the verification link to activate your account.
+
+  </Step>
+  <Step title="Log In" icon="log-in">
+
+  Return to `https://app.alexanderkrakhotko.com/login`.
+
+  Enter your credentials to access the dashboard.
+
+  </Step>
+</Steps>
+
+## Create Your First Documentation Space
+
+Once logged in, set up your project space.
+
+<Steps>
+  <Step title="New Space" icon="plus">
+
+  Click the **New Space** button in the top-right corner.
+
+  Enter a name like `My First Project` and select a template (e.g., "Blank MDX").
+
+  </Step>
+  <Step title="Configure Basics" icon="settings">
+
+  Add a description: "Documentation for my Alexander Krakhotko project."
+
+  Set the brand color to `#3B82F6`.
+
+  Click **Create**.
+
+  </Step>
+</Steps>
+
+## Upload Initial Project Files
+
+You can upload files via the web interface or CLI.
+
+<Tabs>
+  <Tab title="Web Drag & Drop" icon="upload">
+
+  In your new space, navigate to the **Files** tab.
+
+  Drag your `README.mdx`, images, or config files into the upload zone.
+
+  Files appear instantly in the file tree.
+
+  </Tab>
+  <Tab title="CLI Upload" icon="terminal">
+
+  First, install the CLI globally:
+
+  <CodeGroup tabs="npm,yarn">
+  ````bash
+  npm install -g @alexanderkrakhotko/cli
+  ````
+
+  ````bash
+  yarn global add @alexanderkrakhotko/cli
+  ````
+  </CodeGroup>
+
+  Authenticate and upload:
+
+  ````bash
+  ak-docs login --email your@email.com
+  ak-docs space create "My First Project" --upload ./docs/*
+  ````
+
+  </Tab>
+</Tabs>
+
+## Basic Interface Tour
+
+Explore the main dashboard areas.
+
+<Columns cols={3}>
+  <Card title="Editor" icon="edit-3" href="#editor-section">
+    Write and preview MDX docs with live rendering.
+  </Card>
+  <Card title="Files" icon="file-text" href="#files-section">
+    Manage your documentation files and assets.
+  </Card>
+  <Card title="Publish" icon="globe" href="#publish-section">
+    Deploy your space to a custom URL.
+  </Card>
+</Columns>
+
+<Callout kind="tip">
+
+Ready for more? Check the [Editor Guide](/introduction#editor) or [Publishing](/authentication#publish) sections next.
+
+</Callout>
